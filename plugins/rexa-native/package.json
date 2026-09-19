@@ -1,0 +1,24 @@
+{
+  "name": "rexa-native",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "types": "src/definitions.d.ts",
+  "files": [
+    "dist",
+    "android"
+  ],
+  "scripts": {},
+  "dependencies": {
+    "@capacitor/core": "^8.0.0"
+  },
+  "peerDependencies": {
+    "@capacitor/core": ">=8.0.0"
+  },
+  "capacitor": {
+    "android": {
+      "src": "android"
+    }
+  },
+  "type": "module"
+}
