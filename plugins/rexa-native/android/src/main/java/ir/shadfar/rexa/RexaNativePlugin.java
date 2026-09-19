@@ -13,8 +13,8 @@ import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.telephony.SmsMessage;
 
-import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
+import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 
 import com.getcapacitor.JSArray;
 import com.getcapacitor.JSObject;
