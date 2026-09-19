@@ -8,6 +8,11 @@ android {
         minSdk project.hasProperty("minSdkVersion") ? rootProject.ext.minSdkVersion : 23
         targetSdk project.hasProperty("targetSdkVersion") ? rootProject.ext.targetSdkVersion : 36
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
 }
 
 repositories {
@@ -17,4 +22,9 @@ repositories {
 
 dependencies {
     implementation project(":capacitor-android")
+
+    // وابستگی‌های AndroidX مورد نیاز برای RexaNativePlugin.java
+    implementation "androidx.annotation:annotation:1.9.1"
+    implementation "androidx.core:core:1.13.1"
+    implementation "androidx.appcompat:appcompat:1.7.0"
 }
